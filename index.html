@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a2b">
+  <title>Liza ♥ Sarvesh — A Letter from Liza to Sarvesh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-heart">♥</div>
+    <p>Loading a little universe I made for you...</p>
+  </div>
+
+  <div class="stars" aria-hidden="true"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <button class="brand" data-scroll="home">L <span>♥</span> S</button>
+    <div class="nav-links">
+      <button data-scroll="story">Your story from me</button>
+      <button data-scroll="memories">My memories with you</button>
+      <button data-scroll="letter">Letter</button>
+    </div>
+    <button id="musicBtn" class="music-btn" aria-label="Play our song">♫ <span>Our song</span></button>
+  </nav>
+
+  <audio id="ourSong" preload="none" loop>
+    <source src="alag-aasmaan.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow">11 · 03 · 2026</p>
+        <h1>Liza <span>♥</span> Sarvesh</h1>
+        <p class="hero-subtitle">Six months of loving you.</p>
+        <p class="hero-small">Classmates → online friends → best friends → the love I found in you.</p>
+
+        <div class="counter-card">
+          <div>
+            <span id="months">6</span>
+            <small>months</small>
+          </div>
+          <div class="counter-dot">•</div>
+          <div>
+            <span>∞</span>
+            <small>memories</small>
+          </div>
+          <div class="counter-dot">•</div>
+          <div>
+            <span>1</span>
+            <small>love story</small>
+          </div>
+        </div>
+
+        <button class="primary-btn" data-scroll="story">Open the story I made for you ↓</button>
+      </div>
+
+      <div class="scroll-hint">scroll slowly — this one is for you, Sarvesh</div>
+    </section>
+
+    <section id="story" class="section story-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHAPTER ONE</p>
+        <h2>Before I knew how much you would mean to me.</h2>
+        <p>It started so simply: classmates. Then online friends. Then best friends. And somewhere along the way, you became my person — the one I started wanting beside me.</p>
+      </div>
+
+      <div class="story-card reveal">
+        <div class="story-number">01</div>
+        <div>
+          <h3>And then February happened.</h3>
+          <p>
+            We didn't need some grand movie scene. A few conversations, a little courage,
+            a lot of comfort — and suddenly the person I used to call my best friend
+            was the person I wanted beside me.
+          </p>
+          <p class="handwritten">Some stories begin with a hello. Ours grew from friendship.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHAPTER TWO</p>
+        <h2>The days that changed everything for me.</h2>
+        <p>These are the little moments with you I never want to forget.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">24 FEB</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span>🛍️</span>
+            <h3>Shopping at Crawford</h3>
+            <p>One ordinary day that doesn't feel ordinary anymore.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">27 FEB</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span>💌</span>
+            <h3>You confessed.</h3>
+            <p>And suddenly there was a secret between two best friends that wasn't really a secret anymore.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">03 MAR</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span>❤️</span>
+            <h3>I confessed too.</h3>
+            <p>Because pretending I didn't feel the same was getting impossible.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item featured reveal">
+          <div class="timeline-date">06 MAR</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span>🌹</span>
+            <h3>Three roses & Marine Drive</h3>
+            <p>Three roses. The sea. You. Me. One of those memories that stays warm no matter how far away you are.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">11 MAR</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span>✨</span>
+            <h3>Your day. Our day too.</h3>
+            <p>The date that became ours — the beginning of our relationship and the start of this little anniversary tradition.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">20 MAR</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span>🎨</span>
+            <h3>The unexpected art gallery date</h3>
+            <p>Unexpected, sweet, and exactly the kind of memory I wish I could replay.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section first-date">
+      <div class="date-image reveal">
+        <img src="images/photo4.jpeg" alt="Liza and Sarvesh together">
+      </div>
+      <div class="date-copy reveal">
+        <p class="eyebrow">CHAPTER THREE</p>
+        <h2>The first cute little date I had with you.</h2>
+        <p class="big-quote">Chole bhature at Samrat.</p>
+        <p>
+          Nothing extravagant. Nothing complicated. Just two people eating together
+          and slowly realizing how nice it felt to have a “we”.
+        </p>
+        <p>And honestly? I would choose that kind of simple happiness with you again and again.</p>
+      </div>
+    </section>
+
+    <section class="section smooch-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHAPTER FOUR · CLASSIFIED MEMORY</p>
+        <h2>A very tiny crime against my ability to act normal.</h2>
+        <p>Tap the button. You already know what happened.</p>
+      </div>
+
+      <div class="secret-box reveal">
+        <div class="secret-icon">💋</div>
+        <p id="secretText">There is a memory I keep replaying...</p>
+        <button id="secretBtn" class="primary-btn">Reveal it</button>
+      </div>
+    </section>
+
+    <section id="memories" class="section gallery-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHAPTER FIVE</p>
+        <h2>The memories I keep of us.</h2>
+        <p>Proof that the 2½ months I had with you can hold a ridiculous number of memories.</p>
+      </div>
+
+      <div class="gallery">
+        <button class="photo-card tall reveal" data-img="images/photo1.jpeg" data-caption="Us, somewhere in the middle of becoming us.">
+          <img src="images/photo1.jpeg" alt="Liza and Sarvesh">
+          <span>01 · us</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo2.jpeg" data-caption="The kind of closeness I miss when you're away.">
+          <img src="images/photo2.jpeg" alt="Liza and Sarvesh">
+          <span>02 · close</span>
+        </button>
+        <button class="photo-card wide reveal" data-img="images/photo3.jpeg" data-caption="A blue-sky kind of memory.">
+          <img src="images/photo3.jpeg" alt="Liza and Sarvesh">
+          <span>03 · blue skies</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo4.jpeg" data-caption="One of my favourite versions of us.">
+          <img src="images/photo4.jpeg" alt="Liza and Sarvesh">
+          <span>04 · favourite</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo5.jpeg" data-caption="A little piece of our Mumbai days.">
+          <img src="images/photo5.jpeg" alt="Liza and Sarvesh">
+          <span>05 · mumbai</span>
+        </button>
+        <button class="photo-card tall reveal" data-img="images/photo6.jpeg" data-caption="The three roses. I remember. Always.">
+          <img src="images/photo6.jpeg" alt="Three roses">
+          <span>06 · roses</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo7.jpeg" data-caption="Art, us, and an unexpected date.">
+          <img src="images/photo7.jpeg" alt="Liza and Sarvesh at an art gallery">
+          <span>07 · art</span>
+        </button>
+        <button class="photo-card wide reveal" data-img="images/photo8.jpeg" data-caption="Another ordinary moment that became a memory.">
+          <img src="images/photo8.jpeg" alt="Liza and Sarvesh">
+          <span>08 · together</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo9.jpeg" data-caption="A memory I would happily keep forever.">
+          <img src="images/photo9.jpeg" alt="Liza and Sarvesh">
+          <span>09 · forever</span>
+        </button>
+        <button class="photo-card reveal" data-img="images/photo10.jpeg" data-caption="One more for the memory box.">
+          <img src="images/photo10.jpeg" alt="Liza and Sarvesh">
+          <span>10 · us again</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section ocean-section">
+      <div class="ocean-overlay"></div>
+      <div class="ocean-content reveal">
+        <p class="eyebrow">CHAPTER SIX</p>
+        <div class="ship">⚓</div>
+        <h2>Then the ocean came between us.</h2>
+        <p class="ocean-lead">We had 2½ months together before you left for sailing.</p>
+        <p>
+          And now you're out there, sailing on a ship, doing something you worked for.
+          I miss you. More than this website can say.
+        </p>
+        <p>
+          But distance didn't erase what we built in those 2½ months.
+          If anything, it taught me how much those little moments mean.
+        </p>
+        <div class="ocean-line">You sail across the ocean. I carry you in my heart.</div>
+      </div>
+    </section>
+
+    <section class="section reasons-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHAPTER SEVEN</p>
+        <h2>Six things I love about you, Sarvesh.</h2>
+        <p>Actually, there are many more. But let's start with six.</p>
+      </div>
+
+      <div class="reasons">
+        <button class="reason reveal" data-reason="01">
+          <strong>01</strong>
+          <span>The kindest sweetheart</span>
+          <small>Tap me</small>
+        </button>
+        <button class="reason reveal" data-reason="02">
+          <strong>02</strong>
+          <span>You handle all of me.</span>
+          <small>Tap me</small>
+        </button>
+        <button class="reason reveal" data-reason="03">
+          <strong>03</strong>
+          <span>Your gentle way of caring.</span>
+          <small>Tap me</small>
+        </button>
+        <button class="reason reveal" data-reason="04">
+          <strong>04</strong>
+          <span>Those little affectionate touches.</span>
+          <small>Tap me</small>
+        </button>
+        <button class="reason reveal" data-reason="05">
+          <strong>05</strong>
+          <span>You love me — properly.</span>
+          <small>Tap me</small>
+        </button>
+        <button class="reason reveal" data-reason="06">
+          <strong>06</strong>
+          <span>And, unfortunately, you're very attractive.</span>
+          <small>Tap me</small>
+        </button>
+      </div>
+      <div id="reasonPopup" class="reason-popup" aria-live="polite"></div>
+    </section>
+
+    <section class="section last-meet">
+      <div class="last-meet-image reveal">
+        <img src="images/photo10.jpeg" alt="A memory of Liza and Sarvesh">
+      </div>
+      <div class="last-meet-copy reveal">
+        <p class="eyebrow">CHAPTER EIGHT</p>
+        <h2>The last meet.</h2>
+        <p class="big-quote">The most emotional goodbye. And somehow, the sweetest memory.</p>
+        <p>
+          If I could save one feeling from that day in a little glass bottle,
+          I would keep it forever.
+        </p>
+        <p>
+          Because saying goodbye to you wasn't easy. But loving you enough to miss you,
+          while still being proud of you, is something I will always choose.
+        </p>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CHAPTER NINE</p>
+        <h2>A letter from me, Liza, to my sailor.</h2>
+        <p>There's one thing left. Open it when you're ready.</p>
+      </div>
+
+      <button id="envelope" class="envelope reveal" aria-label="Open love letter">
+        <div class="envelope-back"></div>
+        <div class="envelope-paper">
+          <span>For Sarvesh</span>
+          <small>♥</small>
+        </div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-front"></div>
+      </button>
+
+      <article id="letterContent" class="letter-content">
+        <p>My Sarvesh,</p>
+        <p>
+          Six months sounds like a long time when I say it out loud, but when I think
+          about us, I mostly think about those 2½ months we actually got together
+          before the sea took you away.
+        </p>
+        <p>
+          I think about Crawford. I think about the confessions. The three roses.
+          Marine Drive. Our first chole bhature date at Samrat. The unexpected art
+          gallery date. Your silly little goodbye after that first smooch.
+          And especially our last meet.
+        </p>
+        <p>
+          I miss the tiny things — your gentle touch, your affection, the way you
+          handle my moods, and simply having you close enough that I don't have to
+          miss you.
+        </p>
+        <p>
+          But I'm also incredibly proud of you. Go sail, grow, learn, become everything
+          you're meant to become. I'll be here, cheering for you from wherever I am.
+        </p>
+        <p>
+          Oceans can make the distance bigger. They don't get to make my love smaller.
+        </p>
+        <p class="letter-sign">Love,<br><strong>Liza</strong> ♥</p>
+      </article>
+    </section>
+
+    <section class="section final-section">
+      <div class="final-content reveal">
+        <p class="eyebrow">ONE LAST THING</p>
+        <div class="final-heart">♥</div>
+        <h2>Six months of loving you.</h2>
+        <h3>And so many more memories to make.</h3>
+        <p>
+          You sail. I wait. I love you. We continue.<br>
+          And someday, this distance will just be another chapter I remember as the time I learned how deeply I could love you.
+        </p>
+        <p class="final-sign">Come back soon, my sailor. ⚓</p>
+        <button id="foreverBtn" class="primary-btn">Press for a little surprise</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button id="closeLightbox" class="close-lightbox" aria-label="Close">×</button>
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <div id="surprise" class="surprise" role="dialog" aria-modal="true">
+    <div class="surprise-card">
+      <div class="surprise-hearts">♥ ♥ ♥</div>
+      <h2>Hey, sailor.</h2>
+      <p>No matter how far the ship goes...</p>
+      <p class="surprise-big">you're still my favourite person on this planet.</p>
+      <p>Happy 6 months, my Sarvesh.</p>
+      <button id="closeSurprise" class="primary-btn">Close ♥</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
