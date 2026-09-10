@@ -40,27 +40,6 @@ const observer = new IntersectionObserver(entries => {
 
 $$(".reveal").forEach(el => observer.observe(el));
 
-// Music button — add your own legally obtained copy of alag-aasmaan.mp3
-const audio = $("#ourSong");
-const musicBtn = $("#musicBtn");
-
-musicBtn?.addEventListener("click", async () => {
-  if (!audio) return;
-  try {
-    if (audio.paused) {
-      await audio.play();
-      musicBtn.classList.add("playing");
-      musicBtn.innerHTML = "♫ <span>Playing our song</span>";
-    } else {
-      audio.pause();
-      musicBtn.classList.remove("playing");
-      musicBtn.innerHTML = "♫ <span>Our song</span>";
-    }
-  } catch (err) {
-    alert("Add your own 'alag-aasmaan.mp3' file to this website folder first, then tap the music button.");
-  }
-});
-
 // Secret smooch memory
 const secretBtn = $("#secretBtn");
 const secretText = $("#secretText");

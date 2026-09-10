@@ -27,11 +27,23 @@ body {
   background: var(--navy);
   color: var(--text);
   overflow-x: hidden;
+  line-height: 1.6;
 }
 
 button {
   font: inherit;
   cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.hero-content {
+  max-width: 760px;
+  position: relative;
+  z-index: 2;
 }
 
 .section {
@@ -78,9 +90,10 @@ button {
   background: rgba(5,14,24,.72);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255,255,255,.07);
+  box-shadow: 0 10px 30px rgba(2,7,13,.12);
 }
 
-.brand, .nav-links button, .music-btn {
+.brand, .nav-links button {
   color: var(--text);
   background: transparent;
   border: 0;
@@ -103,7 +116,22 @@ button {
 .nav-links button {
   font-size: .83rem;
   opacity: .75;
-  transition: .2s;
+  transition: .2s ease;
+  padding: 8px 0;
+  position: relative;
+}
+
+.nav-links button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: var(--rose2);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease;
 }
 
 .nav-links button:hover {
@@ -111,18 +139,8 @@ button {
   color: var(--rose2);
 }
 
-.music-btn {
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 999px;
-  padding: 9px 14px;
-  font-size: .82rem;
-  transition: .2s;
-}
-
-.music-btn:hover,
-.music-btn.playing {
-  border-color: var(--rose2);
-  color: var(--rose2);
+.nav-links button:hover::after {
+  transform: scaleX(1);
 }
 
 .eyebrow {
@@ -211,6 +229,10 @@ h3,
 .primary-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 17px 40px rgba(215,123,131,.3);
+}
+
+.primary-btn:active {
+  transform: translateY(0);
 }
 
 .scroll-hint {
@@ -925,10 +947,6 @@ h3,
   }
 
   .nav-links {
-    display: none;
-  }
-
-  .music-btn span {
     display: none;
   }
 
